@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: kubescape/github-action@main
-      continue-on-error: true
+      continue-on-error: false
       with:
         format: sarif
         outputFile: results.sarif
